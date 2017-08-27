@@ -1,0 +1,81 @@
+body {
+
+		margin: 0;
+		background-color: #222;
+		background-image: url("assets/images/dark-triangles.png");
+		font-family: Helvetica, sans-serif;
+		font-weight: 300;
+	}
+
+	p {
+
+		letter-spacing: 2.2px;
+		line-height: 150%;
+		color: #444;
+		font-weight: bold;
+		line-height: 
+	}
+
+.content {
+
+	background-color: #56ddaa;
+	border: 3px solid white;
+	margin: 5%;
+	padding-right: 29px;
+}
+
+#connection {
+
+	background-color: #56ddaa;
+	bottom: 0;
+	border-top: 5px solid white;
+}
+
+
+.navbar {
+
+	background-color: #56ddaa;
+	color: white;
+}
+
+.navbar-brand {
+
+	font-size: 2.3em;
+	margin-left: 20%;
+}
+
+.img-thumbnail {
+
+	
+	display: inline;
+}
+
+.list-inline {
+
+	margin-left: 44%;
+}
+
+#profile {
+
+	width: 150px;
+	float: left;
+	margin: 10px;
+
+}
+
+.form-control {
+
+	margin: 1.2em;
+}
+
+.photo-portfolio img {
+		
+
+	    width: 39%;
+	    height: 50%;
+	    flex-wrap: wrap;
+	    margin: 3%;
+	    padding-right: 3%;
+	    
+	    
+	}
