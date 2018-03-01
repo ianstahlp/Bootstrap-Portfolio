@@ -1,81 +1,77 @@
 body {
-
-		margin: 0;
-		background-color: #222;
-		background-image: url("assets/images/dark-triangles.png");
-		font-family: Helvetica, sans-serif;
-		font-weight: 300;
-	}
-
-	p {
-
-		letter-spacing: 2.2px;
-		line-height: 150%;
-		color: #444;
-		font-weight: bold;
-		line-height: 
-	}
-
-.content {
-
-	background-color: #56ddaa;
-	border: 3px solid white;
-	margin: 5%;
-	padding-right: 29px;
+    min-height: 75rem;
+    /* Can be removed; just added for demo purposes */
 }
-
-#connection {
-
-	background-color: #56ddaa;
-	bottom: 0;
-	border-top: 5px solid white;
-}
-
 
 .navbar {
-
-	background-color: #56ddaa;
-	color: white;
+    margin-bottom: 0;
 }
 
-.navbar-brand {
-
-	font-size: 2.3em;
-	margin-left: 20%;
+.about-me {
+    padding-top: 9rem;
+    padding-bottom: 35rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    background-image: url('./assets/images/jumboback.jpeg');
+    background-attachment: fixed;
 }
 
-.img-thumbnail {
-
-	
-	display: inline;
+.jumbotron-fluid p:last-child {
+    margin-bottom: 0;
 }
 
-.list-inline {
-
-	margin-left: 44%;
+.jumbotron-heading {
+    font-weight: 300;
+    text-shadow: 2px 2px 4px #202020;
+    color: rgb(255, 254, 254);
 }
 
-#profile {
-
-	width: 150px;
-	float: left;
-	margin: 10px;
-
+.jumbotron-fluid .box-of-me {
+    max-width: 40rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.795)
 }
 
-.form-control {
-
-	margin: 1.2em;
+.portrait {
+    width: 9rem;
 }
 
-.photo-portfolio img {
-		
+.album {
+    min-height: 33rem;
+    /* Can be removed; just added for demo purposes */
+    background-color: #002331;
+}
 
-	    width: 39%;
-	    height: 50%;
-	    flex-wrap: wrap;
-	    margin: 3%;
-	    padding-right: 3%;
-	    
-	    
-	}
+img {
+    width: auto;
+}
+
+.card {
+    float: left;
+    width: 33.333%;
+    padding: 0.75rem;
+    margin-bottom: 2rem;
+    border: 0;
+}
+
+.card>img {
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 85%;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: 0.25rem;
+}
+
+.lead {
+    color: white;
+    text-shadow: 2px 2px 4px #030303;
+}

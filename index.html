@@ -2,95 +2,148 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ian Stahl Portfolio</title>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Ian Stahl</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <li class="active"><a href="#top">About Me</a></li>
-                        
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-                </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <div class="container-fluid">
-        <div class="row"></div>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-4 content">
-                <h1>About Me</h1>
-                <p>
-                    <img src="https://kidssearch.com/picsearch/images/donkey-pic-1600x1084-54d27b4.png" alt="picture of me" id="profile"> Currently attending a pretty cool little class in the UCLA extentions program that is essentially kicking peoples asses to learn how to code in an quick period of time. It's neat. I like the brisk pace. Reminds me of restaurant work. Always moving and always learning. Despite all that, the ultimate goal is to find employment through coding. It's remarkably rewarding work having the privelage to watch the slow progress of whatever your app or website is going. So I continue to learn.</p>
-                <p>In addition, I like to play video games as if it were a drug. You can imagine how I feel not having the ability to play them currently. I'm having withdrawals. Help</p>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-4 content">
-            <h3>Contact me!</h3>
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="firstNameInput" class="col-sm-2 control-label">First Name</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="First Name">
-                        </div>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Creative, passionate and detail oriented Web Developer with a sociable personality. Great communicative skills and ability to work under pressure.
+                        </p>
+                        <p class="text-muted">Background in Graphic Design and web design. Expererience working in highly stressful environments and still maintain a collected demeanor.</p>
                     </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Last Name</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Last Name">
-                        </div>
+                    <div class="col-sm-4 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://www.linkedin.com/in/ianstahlp/" class="text-white">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/ianstahlp" class="text-white">Visit My GitHub</a>
+                            </li>
+                            <li>
+                                <a href="mailto:ianpstahl@gmail.com" class="text-white">Email me</a>
+                            </li>
+                        </ul>
                     </div>
-                    <p>Message Me</p>
-                    <textarea class="form-control" rows="3"></textarea>
-                </form>
-                <div class="col-md-1"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <!-- <div class="col-md-4"></div> -->
-        <div class="col-md-4"></div>
-	        <div class="col-md-4">
-	        <div class="footer navbar-fixed-bottom" id="connection">
-	            <h3 style="text-align: center;">Connect With Me</h3>
-	            <br>
-	            <ul class="list-inline">
-	                <li><img src="https://static.addtoany.com/images/blog/github-icon.png" class="img-thumbnail" alt="Cinque Terre" width="75" height="75"></li>
-	                <li><img src="https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz.png" class="img-thumbnail" alt="linkedIn logo" width="75" height="75"></li>
-	                <li><img src="https://pbs.twimg.com/profile_images/643819371656294405/F-pVCbHg.png" class="img-thumbnail" alt="linkedIn logo" width="75" height="75"></li>
-	            </ul>
-	            <!--  <div class="col-md-4"></div> -->
-	        </div>
-	    </div>
-	    <div class="col-md-4"></div>
-    </div>
+        <div class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand">Ian Stahl</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section class="jumbotron-fluid text-center about-me">
+            <div class="container box-of-me">
+                <h1 class="jumbotron-heading">Web Development Skills</h1>
+                <p class="lead text-left">Front end:<br> UX/UI Design, Handlebars, ReactJS, HTML, CSS, Bootstrap, jQuery, Adobe Photoshop, Javascript</p>
+                <p class="lead text-left">Back End:<br> CLI, NodeKS, ExpressJS, AJAX, MySQL, Firebase, MongoDB.</p>
+
+            </div>
+        </section>
+
+        <div class="album text-muted">
+            <span class="d-block p-2 bg-dark text-white text-center"><h3 class="jumbotron-heading">Portfolio Examples</h3></span>
+
+            <div class="container-fluid bg-3 text-center">
+                <br><br>
+                <div class="row ">
+                    <div class="col-sm-4">
+                        <h4>iOS/Android App</h4>
+                        <p>This is a Massive-Multiplayer Mobile Trivia game app that is using MongoDB, Firebase, Express, React, Node.js</p>
+                        <img src="./assets/images/musiqheadlogo.png" class="img-responsive img-thumbnail margin" style="width:63%" alt="Image">
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h4>Web Wellness App</h4>
+                        <p>This is a wellness tracker app that keeps track everything that you input and displays it visually after the week is over</p>
+                        <img src="./assets/images/statelogo.png" class="img-responsive img-thumbnail margin" style="width:75%" alt="Image">
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Train Scheduling </h4>
+                        <p>App that manages your train schedule and adds new ones that you may have. Focus test for firebase</p>
+                        <img src="./assets/images/trainschedule.png" class="img-responsive img-thumbnail margin" style="width:75%" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+
+        <section id="contact" class="bg-dark text-white text-center">
+            <div class="container my-auto">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><br><br>
+                        <h2 class="section-heading">Contact</h2>
+                        <hr class="my-4">
+                        <a href="mailto:ianpstahl@gmail.com" target="new" style="text-decoration: none">
+                            <p class="con-email display-4" style="color: #b2b2b2">ianpstahl@gmail.com</p>
+                        </a><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mx-auto">
+                        <div class="container-fluid justify-content-around">
+                            <div class="links ">
+                                <a href="https://github.com/ianstahlp" target="new"><img class="img-links img-fluid" src="./assets/images/github-logo.png" alt="GitHub"></a>
+
+                                <a href="https://www.linkedin.com/in/ianstahlp/" target="new"><img class="img-links img-fluid" src="./assets/images/linkedin-logo.png" alt="Linked In"></a>
+
+                                <a href="mailto:mls@michaelleesanchez.com" target="new"><img class="img-links img-fluid" src="./assets/images/email-logo.png" alt="Email">
+                                </a>
+
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        </div>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Website created by &copy; Ian Stahl 2018, Please feel free to contact me.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+                  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <sript src="logic.js"></sript>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
