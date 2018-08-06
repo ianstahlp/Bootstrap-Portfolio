@@ -1,0 +1,280 @@
+body {
+    background: #333;
+}
+
+.video-container {
+    position: relative;
+}
+
+video {
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.overlay-desc {
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.video-title {
+    color: white;
+    font-family: 'Nobile', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+}
+
+.titles {
+    margin-top: 1em;
+}
+
+.subtext {
+    color: indianred;
+    font-family: 'Nobile', sans-serif;
+    font-size: 4vw;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+h1 {
+    color: white;
+    font-family: 'Nobile', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+i {
+    color: indianred;
+}
+
+.skill-type {
+    font-weight: bold;
+    color: rgb(57, 141, 54);
+}
+
+.gold-star {
+    color: gold;
+}
+
+.jumbotron {
+    background: #333;
+}
+
+
+/* 
+corner effect
+
+*/
+
+.corners {
+    background: rgb(12, 12, 12);
+    height: 700px;
+    margin: 50px auto;
+    max-width: 600px;
+    position: relative;
+    width: 80%;
+    box-shadow: 0 1px 7px hsla(0, 82%, 53%, 0.2);
+}
+
+
+/* Corner Effect */
+
+.corners:after,
+.corners:before {
+    background: #333;
+    content: '';
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    width: 100px;
+    box-shadow: 0 5px 10px -7px hsla(0, 87%, 39%, 0.5);
+}
+
+.corners:after {
+    left: -50px;
+    transform: rotate(-45deg);
+}
+
+.corners:before {
+    right: -50px;
+    transform: rotate(45deg);
+}
+
+
+/* Flip Cards */
+
+#team {
+    background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.flip-0 {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.image-flip:hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-180 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+/* background svg shenanigans */
+
+.backgroundimage {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23050505' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%230b0b0b' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%230f0f0f' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23131313' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23161616' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23191919' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%231c1c1c' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.jumbotron {
+    margin-top: 0;
+    margin-bottom: 0;
+}

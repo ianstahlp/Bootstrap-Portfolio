@@ -1,148 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ian Stahl Portfolio</title>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- reset css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- custom -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Nobile:700,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Gafata|Open+Sans:300' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <div class="collapse bg-dark" id="navbarHeader">
+    <div class="video-container">
+        <video autoplay loop muted>
+              <source src="./assets/video/smoke-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+        </video>
+        <div class="overlay-desc">
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" data-aos-once="true">
+                <h1 class='video-title'>Simple designs</h1>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="800" data-aos-once="true">
+                <h3 class='subtext'>Ian Stahl</h3>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1400" data-aos-once="true">
+                <p>Full-Stack Web Developer</p>
+            </div>
+
+            <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="2000" data-aos-once="true">
+                <i class="fa fa-arrow-circle-down fa-lg" id="down-arrow"></i>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="backgroundimage">
+        <br><br><br>
+        <div class="container">
+            <h3 class="subtext">About Me</h3>
+            <br>
+            <p>
+                UCLA Extentions graduate with strong design incite and Full-Stack Web Development Capabilities. Have worked on apps that required technologies like JavaScript, React, MongoDB, Express, and even web/Andriod/iOS applications.
+            </p>
+        </div>
+        <div class="corners"><br>
+            <div class="display-4" style="text-align: center; color: indianred; font-weight: strong">Skills</div><br>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted">Creative, passionate and detail oriented Web Developer with a sociable personality. Great communicative skills and ability to work under pressure.
-                        </p>
-                        <p class="text-muted">Background in Graphic Design and web design. Expererience working in highly stressful environments and still maintain a collected demeanor.</p>
-                    </div>
-                    <div class="col-sm-4 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="https://www.linkedin.com/in/ianstahlp/" class="text-white">LinkedIn</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/ianstahlp" class="text-white">Visit My GitHub</a>
-                            </li>
-                            <li>
-                                <a href="mailto:ianpstahl@gmail.com" class="text-white">Email me</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <p><span class="skill-type">Languages:</span><span class="gold-star"> Javascript</span>, SQL, NoSQL, <span class="gold-star">HTML</span>, <span class="gold-star">CSS</span> </p><br>
+                <p><span class="skill-type">Frameworks:</span> <span class="gold-star">React/Redux</span>, React Native, <span class="gold-star">Node.js</span>, Express.js, jQuery, <span class="gold-star">Bootstrap</span></p><br>
+                <p><span class="skill-type">Databases:</span> <span class="gold-star">MongoDB</span>, <span class="gold-star">MySQL</span>, Google Firebase, Sequelize, Mongoose</p><br>
+                <p><span class="skill-type">Miscellaneous:</span> <span class="gold-star">Git</span>, <span class="gold-star">GitHub</span>, Heroku, REST, AJAX, <span class="gold-star">API</span>, <span class="gold-star">Expo</span>, Web/Mobile Dev, MVC,
+                    .NET
+                </p><br>
+                <p><span class="skill-type">Software:</span> WordPress, Shopify, PhotoShop, Illustrator, Sketch</p><br>
+                <p><strong>LEGEND:</strong> <span class="gold-star">Gold</span> <span class="skill-type">=</span> Very Proficient </p>
+                <p><strong style="visibility: hidden">LEGEND:</strong> White <span class="skill-type">=</span> Regular Proficient </p>
             </div>
         </div>
-        <div class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand">Ian Stahl</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-            </div>
-        </div>
-    </header>
+        <br><br>
+    </div>
 
-    <main role="main">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="display-4" style="text-align: center; color: indianred; font-weight: strong">Projects</div>
 
-        <section class="jumbotron-fluid text-center about-me">
-            <div class="container box-of-me">
-                <h1 class="jumbotron-heading">Web Development Skills</h1>
-                <p class="lead text-left">Front end:<br> UX/UI Design, Handlebars, ReactJS, HTML, CSS, Bootstrap, jQuery, Adobe Photoshop, Javascript</p>
-                <p class="lead text-left">Back End:<br> CLI, NodeKS, ExpressJS, AJAX, MySQL, Firebase, MongoDB.</p>
 
-            </div>
-        </section>
 
-        <div class="album text-muted">
-            <span class="d-block p-2 bg-dark text-white text-center"><h3 class="jumbotron-heading">Portfolio Examples</h3></span>
-
-            <div class="container-fluid bg-3 text-center">
-                <br><br>
-                <div class="row ">
-                    <div class="col-sm-4">
-                        <h4>iOS/Android App</h4>
-                        <h6>musiQhead</h6>
-                        <p>This is a Massive-Multiplayer Mobile Trivia game app that is using MongoDB, Firebase, Express, React, Node.js</p>
-                        <a class="btn btn-primary" href="https://github.com/nneoma2017/MUSIQHEAD" role="button">GitHub Repo</a> </div>
-
-                    <div class="col-sm-4">
-                        <h4>Web Wellness App</h4>
-                        <h6>S T A T E</h6>
-                        <p>This is a wellness tracker app that keeps track everything that you input and displays it visually after the week is over</p>
-                        <a class="btn btn-primary" href="https://github.com/MJOAN/Project-1" role="button">GitHub Repo</a> </div>
-                    <div class="col-sm-4">
-                        <h4>Train Scheduling </h4>
-                        <p>App that manages your train schedule and adds new ones that you may have. Focus test for firebase</p>
-                        <a class="btn btn-primary" href="https://github.com/ianstahlp/train-schedule" role="button">GitHub Repo</a>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-        </div>
-
-        <section id="contact" class="bg-dark text-white text-center">
-            <div class="container my-auto">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><br><br>
-                        <h2 class="section-heading">Contact</h2>
-                        <hr class="my-4">
-                        <a href="mailto:ips@ianpstahl.com" target="new" style="text-decoration: none">
-                            <p class="con-email display-4" style="color: #b2b2b2">ips@ianpstahl.com</p>
-                        </a><br>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 mx-auto">
-                        <div class="container-fluid justify-content-around">
-                            <div class="links ">
-                                <a href="https://github.com/ianstahlp" target="new"><img class="img-links img-fluid" src="./assets/images/github-logo.png" alt="GitHub"></a>
-
-                                <a href="https://www.linkedin.com/in/ianstahlp/" target="new"><img class="img-links img-fluid" src="./assets/images/linkedin-logo.png" alt="Linked In"></a>
-
-                                <a href="mailto:ips@ianpstahl.com" target="new"><img class="img-links img-fluid" src="./assets/images/email-logo.png" alt="Email">
-                                </a>
-
+        <div className="col-xs-12 col-sm-6 col-md-4">
+            <div className="image-flip">
+                <div className="mainflip flip-0">
+                    <div className="frontside">
+                        <div className="card">
+                            <div className="card-body text-center">
+                                <p><img className="img-fluid" src=https://static.vecteezy.com/system/resources/previews/000/085/377/non_2x/human-robot-vectors.jpg alt="card image" /></p>
+                                <h4 className="card-title">LIRI BOT</h4>
+                                <p className="card-text">Ian Stahl</p>
                             </div>
-                            <br><br>
+                        </div>
+                    </div>
+                    <div className="backside">
+                        <div className="card">
+                            <div className="card-body text-center mt-4">
+                                <h4 className="card-title">LIRI BOT</h4>
+                                <p className="card-text">A CLI app designed specifically to showcase the support of several API's at once. Capable of essentially gathering data based on user input from 3 diffent API's in a conveninient small application for your own viewing pleasure.
+                                    Future iterations of this app will provide users with a front-end to mess up, however, for now, I think it's important for simplicities sake to understand how API's work and how one could gather data from differen't
+                                    API's.
+                                </p>
+                                <ul className="list-inline">
+                                    <li className="list-inline-item">
+                                        <a className="social-icon text-md-center" target="_blank" href=https://github.com/ianstahlp/LIRIBot>
+                                            <i className="fa fa-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-
         </div>
+        <br><br>
 
-    </main>
 
-    <footer class="text-muted">
-        <div class="container">
-            <p class="float-right">
-                <a href="#">Back to top</a>
-            </p>
-            <p>Website created by &copy; Ian Stahl 2018, Please feel free to contact me.</p>
-        </div>
-    </footer>
+    </div>
 
-    <!-- Bootstrap core JavaScript
-                  ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <sript src="logic.js"></sript>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
